@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    padding: 0%;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo del body*/
+body {
+    margin: 0;
+}
+
+/* Cabezera */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #3691be;
+    color: white;
+}
+
+/* Estilo de la barra de navegacion */
+nav {
+    background: #222222;
+    padding: 10px 40px 10px 70px;
+    border-left: none;
+    border-right: none;
+}
+
+/* Style the navigation bar links */
+nav ul { 
+    display: table;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 900px;
+}
+
+/* Estilo del Logo */
+nav .logo {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Posicion de los Enlaces */
+nav ul li{
+    padding: 0 20px;
+    display: table-cell;
+    font-weight: bold;
+    clear: both;
+}
+
+/* Estilo de los Enlaces */
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Color de los enlaces en hover */
+nav ul li:hover {
+    background: black;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+li {
+    display: table-cell;
+    width: 200px;
+}
+
+li.index {background: #3691be;}
+li.travels {background: #106288;}
+li.servicios {background: #0b4661;}
+li.loginForma {background: #093144;}
+li.crearLogin {background: white;}

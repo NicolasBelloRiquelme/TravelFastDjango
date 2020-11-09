@@ -1,0 +1,234 @@
+/* Columna Row */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Barra Lateral */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.side h2 {
+    padding: 20px;
+}
+
+/* Slideshow */
+.slider {
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: step-start;
+}
+
+.slider img {
+    padding: 20px;
+    width: 100%;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+
+    20% { margin-left: -100%;}
+
+    40% { margin-left: -200%;}
+
+    60% { margin-left: -300%;}
+
+    80% { margin-left: -400%;}
+}
+
+/* Main columna */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .wrap-row{
+    position: relative;
+    max-width: 600px;
+    background: #3691be;
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+}
+
+.main .wrap-row .image{
+    max-width: 350px;
+    flex: 0 0 50%;
+}
+
+.main .wrap-row .image img{
+    max-width: 100%;
+}
+
+.main .wrap-row .text{
+   margin-left: 10px; 
+}
+
+.main .wrap-row a {
+    color: white;
+}
+
+.main .type-one{
+    position: relative;
+    max-width: 100%;
+    background-color: #3691be;
+    display: flex;
+    margin: 10px;
+    padding: 50px;
+}
+
+.main .type-one .bigimage{
+    max-width: 500px;
+    flex: 0 0 100%;
+}
+
+.main .type-one .bigimage img{
+    max-width: 100%;
+}
+
+.main .type-one a {
+    display: flex;
+    color: white;
+    margin: 120px 0 0 0;
+}
+
+.main .type-one .bigtext{
+    margin-left: 20px;
+}
+
+/* Enlaces More */
+.more {
+    background: #3691be;
+}
+
+.more a:hover {
+    color: #ff4d4d;
+}
+
+/* Imagen barra lateral */
+.sideimage {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Responsive Code */
+@media screen and (max-width: 1860px){
+    .navbar nav {
+        padding: 10px 40px 10px 0;
+    }   
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        padding: 0 0 10px;
+        
+    }
+
+    .navbar nav ul li {
+        padding: 10px 20px 10px;
+        text-align: justify;
+        display: table-row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1829px) {
+    .wrap-row {
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .wrap-row, .image{
+        max-width: 100%;
+        margin: 0 60px;
+    }
+
+    .main {   
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1188px) {
+
+    nav {
+        padding: 10px 40px 10px 0;
+    }
+
+    nav ul div.items {
+        flex-direction: column;
+        max-width: 300px;
+        padding: 0 0 10px;
+    }
+
+    nav ul div.items li {
+        max-width: 100%;
+        padding: 10px 20px 10px;
+        text-align: justify;
+    }
+    
+    .type-one{
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .type-one, .bigimage{
+        max-width: 100%;
+    }
+
+    .type-one, .bigtext{
+        margin-left: 20px;
+    }    
+}
+
+@media screen and (max-width: 700px) {
+
+    .row, .main {   
+        flex-direction: column;
+    }
+    
+    .main, .wrap-row {
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .main, .wrap-row {
+        max-width: 100%;
+    }
+
+    .main, .wrap-row, .text{
+        text-align: justify;
+        margin-left: 20px;
+    } 
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+

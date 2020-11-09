@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Fast</title>
+        <link rel="stylesheet" href="{% static 'main/css/layout.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'main/css/header.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'main/css/footer.css' %}" type="text/css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="{% static 'main/js/carrusel.js' %}"></script>
+    </head>
+    
+    <body>
+
+        <!--Navegacion-->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="index"><a href="index">Inicio</a></li>
+                    <li class="travels"><a href="travels">Tipos de Viaje</a></li>
+                    <li class="servicios"><a href="404">Servicios</a></li>
+                    <li class="loginForma"><a href="loginForma">Sesion</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--HEADER-->
+        <div class="header">
+            <h1>Viaje con Travel Fast</h1>
+        </div>
+
+        <!-- Contenido -->
+        <div class="row">
+            <div class="side">
+                <h2>Viaja por el Mundo</h2>                
+                <img class="sideimage" src="{% static 'main/img/logo/foto1.jpg' %}">
+                <p>
+                    Viajes Travel Fast, es una empresa de servicios turísticos y agencia de viajes que opera en todo Chile y el mundo.
+                    <br>
+                    <br>
+                    Viajes Travel Fast se ha convertido en un actor importante dentro del turismo, tanto nacional como internacional. 
+                    Nuestra experiencia y conocimiento del rubro nos ha permitido posicionarnos y lograr que nuestra empresa conecte 
+                    a Chile con el mundo de forma fácil y rápida. Nuestro enfoque de excelencia nos ha permitido otorgar servicios 
+                    turísticos a Grandes empresas y personas naturales que ven en nosotros un partner que logrará cumplir con sus 
+                    requerimientos y los hará llegar a buen destino.
+                </p>
+
+                <div class="slider">
+                    <ul>
+                        <li><img src="{% static 'main/img/carrusel/1.png' %}"></li>
+                        <li><img src="{% static 'main/img/carrusel/2.jpg' %}"></li>
+                        <li><img src="{% static 'main/img/carrusel/3.jpg' %}"></li>
+                        <li><img src="{% static 'main/img/carrusel/4.jpg' %}"></li>
+                        <li><img src="{% static 'main/img/carrusel/5.jpg' %}"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="wrap-row">
+                    <div class="image">
+                        <img src="{% static 'main/img/viajes/foto1cuadro.jpg' %}">
+                    </div>
+                    <div class="text">
+                        <h2>Suiza</h2>
+                        <h5>Viaje a Suiza, Septiembre 7, 2020</h5>
+                        <p><strong>¿Que ver en Suiza?</strong></p>
+                        <p>
+                            Cerca de Lucerna se encuentra el Monte Pilatus, conocido no por su “discreta” altura (2.132m), 
+                            sino por el tren cremallera más empinado del mundo que llega hasta su cima salvando pendientes 
+                            de hasta el 48%. Esta línea de ferrocarril, en funcionamiento desde 1889, atraviesa un 
+                            espectacular paisaje de bosques, prados y paredes rocosas. Y aunque una vez en la cima no 
+                            tendrás la paz y tranquilidad que uno espera encontrar en un lugar como este, el espectacular 
+                            trayecto sin duda merece la pena.
+                        </p>
+                        <footer class="more"><a href="travels">Mas informacion &raquo;</a></footer>
+                    </div>
+                </div>
+                
+                <div class="wrap-row">
+                    <div class="image">
+                        <img src="{% static 'main/img/viajes/foto2cuadro.jpg' %}">
+                    </div>
+                    <div class="text">
+                        <h2>Groenlandia</h2>
+                        <h5>Viaje a Groenlandia, Septiembre 8, 2020</h5>
+                        <p><strong>¿Que ver en Groenlandia?</strong></p>
+                        <p>
+                            Se dice que gran parte del avance del ser humano se debe a su capacidad de, en lugar de adaptarse al 
+                            medio como el resto de los animales, adaptar el medio a sus necesidades.
+                            Pero esto en algunas zonas del mundo como Groenlandia es más fácil decirlo que hacerlo.
+                            Sin duda el estar tan aislado hace que no se sienta la mano del hombre y esto ha hecho que se 
+                            mantengan intacto, casi como estaba hace siglos.
+                            Un país que básicamente es un inmenso glaciar cubre casi toda su superficie, un auténtico desierto 
+                            de hielo que se extiende formando en sus zonas costeras enormes lenguas de hielo, repletas de icebergs.
+                        </p>
+                        <footer class="more"><a href="travels">Mas informacion &raquo;</a></footer>
+                    </div>  
+                </div>
+       
+                <div class="wrap-row">
+                    <div class="image">
+                        <img src="{% static 'main/img/viajes/foto3cuadro.jpg' %}">
+                    </div>
+                    <div class="text">
+                        <h2>China</h2>
+                        <h5>Viaje a China, Septiembre 9, 2020</h5>
+                        <p><strong>¿Que ver en China?</strong></p>
+                        <p>
+                            No encontraría objeción alguna si afirmo que elemento más reconocible de China es la gran 
+                            muralla con la que fortificaron durante siglos buena parte del territorio chino 
+                            (llega incluso al desierto del Gobi). En aquel tiempo el imperio se veía amenazado por 
+                            los vecinos mongoles y los nómadas manchúes. Se calcula que levantaron en diversas fases 
+                            históricas en torno a 21.000 kilómetros de muralla, de los cuales se se conserva en torno 
+                            a un 30% en múltiples tramos donde permanece o bien entera o en completo estado de ruina.
+                        </p>
+                        <footer class="more"><a href="travels">Mas informacion &raquo;</a></footer>
+                    </div>  
+                </div>
+
+                <div class="wrap-row">
+                    <div class="image">
+                        <img src="{% static 'main/img/viajes/foto4cuadro.jpg' %}">
+                    </div>
+                    <div class="text">
+                        <h2>Inglaterra</h2>
+                        <h5>Viaje a Inglaterra, Septiembre 10, 2020</h5>
+                        <p><strong>¿Que ver en Inglatera?</strong></p>
+                        <p>
+                            El Distrito de los Lagos es el Parque Nacional del Reino Unido que más me gusta y una de las joyas 
+                            del norte de Inglaterra. Si te interesa el senderismo, la fotografía, las aventuras al aire libre, 
+                            los pubs acogedores con comida casera o visitar casas de poetas famosos, entonces el Distrito de 
+                            los Lagos está hecho para ti. Llegar hasta él no puede ser más fácil. A tan solo 30 minutos desde 
+                            la autopista M6 se encuentran Ambleside y Windermere, dos de las localidades que están en los Lagos 
+                            del Sur. Llegar en tren al Distrito de los Lagos también es súper sencillo, ya que desde Londres 
+                            salen un montón de trenes que duran poco más de dos horas y media y que cuestan unos 25 euros.
+                        </p>
+                        <footer class="more"><a href="travels">Mas informacion &raquo;</a></footer>
+                    </div>  
+                </div> 
+                
+                <div class="type-one">
+                    <div class="bigimage">
+                        <img src="{% static 'main/img/viajes/bigimage.png' %}">
+                    </div>
+                    <div class="bigtext">
+                        <h1>¿Porque Viajar Ahora?</h1>
+                        <p>
+                            ¿Por qué viajamos? una de las tendencias del ser humano es la exploración, nacemos con ese 
+                            impulso que nos lleva a explorar, a descubrir cosas nuevas con nuestros sentidos, a conocer 
+                            lo desconocido. Hay personas que llegado un momento optan por pararse donde están, pero hay 
+                            otras que la curiosidad los lleva a conocer otros lugares, otras culturas, otras realidades. 
+                            De niños ese impulso vital permite que nos construyamos, pero de mayores nos sirve para 
+                            ampliar esa mente que ya tenemos construida. Cuando abres tu mente, eres capaz de entender 
+                            y respetar otros puntos de vista, comprender otras formas de hacer y de entender la vida. 
+                            Tienes la capacidad de ver que hay un abanico más amplio de posibilidades, porque no juzgas 
+                            lo ajeno en base a lo conocido. Viajar te hace ser más empático y te enriquece en todos los sentidos. 
+                        </p>
+                        <footer class="more"><a href="loginForma">¡Contactenos! &raquo;</a></footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Pie de Pagina-->
+        <footer>
+            <div class="footer-content">
+                <div class="left box">
+                    <h1>Sobre Nosotros</h1>
+                    <div class="content">
+                        <p>
+                            Viajes Travel Fast, es una empresa de servicios turísticos y agencia de viajes que opera en todo Chile y el mundo.
+                            <br>
+                            <br>
+                            Viajes Travel Fast se ha convertido en un actor importante dentro del turismo, tanto nacional como internacional. 
+                            Nuestra experiencia y conocimiento del rubro nos ha permitido posicionarnos y lograr que nuestra empresa conecte 
+                            a Chile con el mundo de forma fácil y rápida. Nuestro enfoque de excelencia nos ha permitido otorgar servicios 
+                            turísticos a Grandes empresas y personas naturales que ven en nosotros un partner que logrará cumplir con sus 
+                            requerimientos y los hará llegar a buen destino.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="center box">
+                    <h2>Contacto</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Huechuraba, Santiago.</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone"></span>
+                            <span class="text">+56 9 1234 5678</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">email@travelfast.cl</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right box">
+                    <h2>Redes Sociales</h2>
+                    <div class="content">
+                        <a href="404"><i class="fab fa-facebook"></i></a>
+                        <a href="404"><i class="fab fa-instagram"></i></a>
+                        <a href="404"><i class="fab fa-twitter"></i></a>
+                        <a href="404"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="copyright">
+                    <p> Travel Fast Inc © 2020. All Rights Reserved.</p>
+                    
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="//jigsaw.w3.org/css-validator/images/vcss"
+                                alt="¡CSS Válido!" />
+                        </a>
+                    </p>
+                                        
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="¡CSS Válido!" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+  
