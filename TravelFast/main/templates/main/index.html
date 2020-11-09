@@ -16,11 +16,14 @@
         <!--Navegacion-->
         <div class="navbar">
             <nav>
+                <span class="bienvenido-msg">Bienvenido, {{request.user}} </span>
+                <span class="bienvenido-msg"><a href="{% url 'salirSesion' %}">Salir Sesion</a></span>
+
                 <ul>
                     <li class="index"><a href="index">Inicio</a></li>
                     <li class="travels"><a href="travels">Tipos de Viaje</a></li>
                     <li class="servicios"><a href="404">Servicios</a></li>
-                    <li class="loginForma"><a href="loginForma">Sesion</a></li>
+                    <li class="forma"><a href="forma">Formulario</a></li>
                 </ul>
             </nav>
         </div>
@@ -157,7 +160,7 @@
                             Tienes la capacidad de ver que hay un abanico más amplio de posibilidades, porque no juzgas 
                             lo ajeno en base a lo conocido. Viajar te hace ser más empático y te enriquece en todos los sentidos. 
                         </p>
-                        <footer class="more"><a href="loginForma">¡Contactenos! &raquo;</a></footer>
+                        <footer class="more"><a href="forma">¡Contactenos! &raquo;</a></footer>
                     </div>
                 </div>
             </div>

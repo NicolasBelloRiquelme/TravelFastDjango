@@ -81,5 +81,17 @@ li {
 li.index {background: #3691be;}
 li.travels {background: #106288;}
 li.servicios {background: #0b4661;}
-li.loginForma {background: #093144;}
-li.crearLogin {background: white;}
+li.inicioSesion {background: #093144;}
+li.crearUsuario {background: white;}
+
+/* Bienvenido Mensaje */
+.bienvenido-msg {
+    font-size: 18px;
+    color: #fff;
+    margin: 20px;
+}
+
+.bienvenido-msg a{
+    text-decoration: none;
+    color: #ff4d4d;
+}
