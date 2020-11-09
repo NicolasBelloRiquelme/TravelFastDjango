@@ -132,7 +132,7 @@ input:focus, textarea:focus {
 /* Crear Usuario Cuadrado */
 .crearUsuario {
     padding: 50px 30px;
-    align-content: center;
+    text-align: center;
 }
 
 /* Guidelines Errors */
