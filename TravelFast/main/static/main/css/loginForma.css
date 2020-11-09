@@ -131,8 +131,7 @@ input:focus, textarea:focus {
 
 /* Crear Usuario Cuadrado */
 .crearUsuario {
-    background: red;
-    padding: 50px 20px;
+    padding: 50px 30px;
     align-content: center;
 }
 
