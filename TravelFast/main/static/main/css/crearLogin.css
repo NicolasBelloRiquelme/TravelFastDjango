@@ -3,7 +3,7 @@
     display: flex;
     background-color: grey;
     align-content: center;
-    padding: 11px;
+    padding: 67px;
 }
 
 .formulario {
@@ -127,42 +127,10 @@ input:focus, textarea:focus {
     text-transform: uppercase;
 }
 
-.button_crear {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 100%;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .button_text:hover {
     box-shadow: 0 0 5px rgba(81,203,238,1);
     border: 1px solid rgba(81,203,238,1);
     background-color: #3e8e41;
-}
-
-.button_crear:hover {
-    box-shadow: 0 0 5px rgba(81,203,238,1);
-    border: 1px solid rgba(81,203,238,1);
-    background-color: #3e8e41;
-}
-/* Crear Usuario Cuadrado */
-.crearUsuario {
-    padding: 0px 30px;
-    margin: 30px 0px 10px 60px;
-    text-align: center;
-}
-
-.crearUsuario ul li a{
-    text-decoration: none;
 }
 
 /* Guidelines Errors */

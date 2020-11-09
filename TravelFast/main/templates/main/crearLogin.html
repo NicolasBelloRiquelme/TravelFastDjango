@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Contactenos</title>
         <link rel="stylesheet" href="{% static 'main/css/calendar.css' %}" type="text/css">
-        <link rel="stylesheet" href="{% static 'main/css/loginForma.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'main/css/crearLogin.css' %}" type="text/css">
         <link rel="stylesheet" href="{% static 'main/css/header.css' %}" type="text/css">
         <link rel="stylesheet" href="{% static 'main/css/footer.css' %}" type="text/css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -29,7 +29,36 @@
             </nav>
         </div>
 
-
+        <!--Formulario-->
+        <div class="form-register">
+            <form id="form" class="formulario" action="forma" method="POST">
+                {% csrf_token %} 
+                {{form }} 
+                
+                <div class="form-answers">
+                    <div class="form_description">
+                        <h2>Crear Usuario</h2>
+                    </div>
+                    <ul>
+                        <li class="li_1">
+                            <label class="usuario" for="element_1">Usuario</label>
+                            <div>
+                                <input id="element_1" name="Usuario" class="element text large" type="user" maxlength="255" value="" required placeholder="Ingrese Usuario">
+                            </div>
+                        </li>
+                        <li class="li_2">
+                            <label class="contrasenna" for="element_2">Ingrese Contraseña</label>
+                            <div>
+                                <input id="element_2" name="Contraseña" class="element text large" type="password" required placeholder="Ingrese Contraseña">
+                            </div>
+                        </li>
+                        <li class="button">
+                            <input id="saveForm" class="button_text" type="submit" value="Iniciar Sesion"/>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
 
         <!--Pie de Pagina-->
         <footer>
