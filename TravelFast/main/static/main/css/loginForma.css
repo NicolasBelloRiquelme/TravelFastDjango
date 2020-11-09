@@ -133,6 +133,7 @@ input:focus, textarea:focus {
 .crearUsuario {
     padding: 50px 30px;
     text-align: center;
+    list-style: none;
 }
 
 /* Guidelines Errors */
