@@ -31,9 +31,8 @@
 
         <!--Formulario-->
         <div class="form-register">
-            <form id="form" class="formulario" action="registroForma" method="POST">
-                {% csrf_token %} 
-                {{form }} 
+            <form id="form" class="formulario" action="forma" method="POST">
+                {% csrf_token %}  
                 <div class="form-answers">
                     <div class="form_description">
                         <h2>Formulario de Contacto</h2>
@@ -42,65 +41,37 @@
                         <li class="li_1">
                             <label class="email" for="element_1">Email:</label>
                             <div>
-                                <input id="element_1" name="Email" class="element text large" type="email" maxlength="255" value="" required placeholder="Ingrese correo electronico">
+                                {{form.Email}}
                             </div>
-                            <p class="guidelines" id="guide_1"><small>user@travelfast.cl</small></p>
                         </li>
                         <li class="li_2">
                             <label class="rut" for="element_2">R.U.N (sin puntos y con guion):</label>
                             <div>
-                                <input id="element_2" name="Rut" class="element text large" type="text" pattern="\d{7,8}-[0-9kK]" required placeholder="Ingrese Run">
+                                {{form.Rut}}
                             </div>
-                            <p class="guidelines" id="guide_2"><small>12345678-9</small></p>
                         </li>
                         <li class="li_3">
                             <label class="nombres" for="element_3">Nombres:</label>
                             <div>
-                                <input id="element_3" name="Nombres" class="element text large" type="text" maxlength="255" required placeholder="Ingrese Nombres">
+                                {{form.Nombres}}
                             </div>
                         </li>
                         <li class="li_4">
                             <label class="apellidos" for="element_4">Apellidos:</label>
                             <div>
-                                <input id="element_4" name="Apellidos" class="element text large" type="text" maxlength="255" required placeholder="Ingrese Apellidos">
+                                {{form.Apellidos}}
                             </div>
                         </li>
                         <li class="li_5">
-                            <label class="fecha">Fecha de Viaje:</label>
-                            <span>
-                                <input id="element_5_1" name="Dia" class="element text" size="2" maxlength="2" type="cal" required placeholder="Dia"> /
-                            </span>
-                            <span>
-                                <input id="element_5_2" name="Mes" class="element text" size="2" maxlength="2" type="cal" required placeholder="Mes"> /
-                            </span>
-                            <span>
-                                <input id="element_5_3" name="Anno" class="element text" size="4" maxlength="4" type="cal" required placeholder="Año"> 
-                            </span>
-                            <span id="calendar_5">
-                                <i class="fa fa-calendar" class="datepicker"></i>
-                            </span>
-                            <script>
-                                Calendar.setup({
-                                    inputField  : "element_5_3",
-                                    baseField   : "element_5",
-                                    displayArea : "calendar_5",
-                                    button      : "cal_img_5",
-                                    ifFormat    : "%B %e, %Y",
-                                    onSelect    : selectEuropeDate
-                                });
-                            </script>
-                        </li>
-                        <li class="li_6">
                             <label class="telefono">Teléfono:</label>
                             <div>
-                                <input id="element_6" name="Telefono" class="element text medium" type="tel" pattern="\d{9}" maxlength="9" required placeholder="Ingrese Nro de Telefono">
+                                {{form.Telefono}}
                             </div>
-                            <p class="guidelines" id="guide_6"><small>998765432</small></p>
                         </li>
                         <li class="li_7">
                             <label class="region" for="element_7">Region de Residencia:</label>
                             <div>
-                                <select class="element select large" id="regiones" name="Region">
+                                <select class="regionSelect" id="regiones" name="Region">
                                     <option value="sin-region" selected="selected">Seleccione Region</option>
                                     <option value="sin-region">-------</option>
                                     <option value="Arica y Parinacota">Arica y Parinacota</option>
@@ -122,7 +93,7 @@
                         <li class="li_8">
                             <label class="comuna" for="element_8">Comuna de Residencia:</label>
                             <div>
-                                <select class="element select large" id="comunas" name="Comuna">
+                                <select class="comunaSelect" id="comunas" name="Comuna">
                                     <option value="sin-region" selected="selected">Seleccione comuna</option>
                                     <option value="sin-region">--</option>
                                 </select>
@@ -131,7 +102,7 @@
                         <li class="li_9">
                             <label class="tipo" for="element_9">Tipo de Viaje: </label>
                             <div>
-                                <select class="element select large" id="tipos" name="TipoViaje"> 
+                                <select class="tipoSelect" id="tipos" name="TipoViaje"> 
                                     <option value="sin-tipo" selected="selected">Seleccione Tipo de Viaje</option>
                                     <option value="sin-tipo">-------</option>
                                     <option value="Viaje de Turismo">Viaje de Turismo</option>
@@ -141,6 +112,7 @@
                                 </select>
                             </div>
                         </li>
+                        
                         <li class="button">
                             <input id="saveForm" class="button_text" type="submit" value="Submit"/>
                         </li>

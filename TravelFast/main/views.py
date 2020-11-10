@@ -1,12 +1,15 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+
 from django.template import loader
+from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib import messages
-from .form import CreateUserForm, LoginUserForm
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+
+from .form import CreateUserForm, LoginUserForm, registroForma
+from .models import formularioRegistro
 
 # Create your views here.
 @login_required(login_url='inicioSesion')
@@ -29,9 +32,22 @@ def notFound(request):
 
 @login_required(login_url='inicioSesion')
 def forma(request):
-    template = loader.get_template('main/forma.html')
-    context = {}
-    return HttpResponse(template.render(context, request))
+    data = {
+        'form': registroForma(request.POST or None)
+    }
+
+    if request.method == 'POST':
+        formulario = registroForma(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Formulario Enviado"
+            return redirect('index')
+        else:
+            data["form"] = formulario
+    else:
+        formulario = registroForma()
+    
+    return render(request, 'main/forma.html', data)
 
 
 def crearUsuario(request):
@@ -83,3 +99,7 @@ def inicioSesion(request):
 def salirSesion(request):
     logout(request)
     return redirect('inicioSesion')
+
+def mostrarForma(request):
+    all_data = formularioRegistro.objects.all
+    return render(request, 'main/mostrarForma.html', {'all':all_data})

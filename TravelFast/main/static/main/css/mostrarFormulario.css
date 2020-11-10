@@ -1,0 +1,129 @@
+.mostrarFormulario {
+    padding: 20px;
+    margin: 20px 0 0 20px;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.mostrarFormulario h2{
+    text-align: center;
+}
+
+.mostrarFormulario table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.content-table thead tr {
+    background-color: #3691be;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #3691be;
+}
+
+/* Responsive Code */
+@media screen and (max-width: 1860px){
+    .navbar nav {
+        padding: 10px 40px 10px 0;
+    }   
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        padding: 0 0 10px;
+        
+    }
+
+    .navbar nav ul li {
+        padding: 10px 20px 10px;
+        text-align: justify;
+        display: table-row;
+        align-items: center;
+    }
+
+    .content-table {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: justify;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1188px) {
+
+    nav {
+        padding: 10px 40px 10px 0;
+    }      
+    nav ul div.items {
+        flex-direction: column;
+        max-width: 300px;
+        padding: 0 0 10px;
+    }
+
+    nav ul div.items li {
+        max-width: 100%;
+        padding: 10px 20px 10px;
+        margin-top: 5px;
+        text-align: justify;
+    }
+
+    .content-table {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: justify;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 972px) {
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content-table thead {
+        display: none;
+    }
+
+    .content-table, .content-table tbody, .content-table tr, .content-table td {
+        display: block;
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+}
