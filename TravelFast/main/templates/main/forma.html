@@ -23,7 +23,7 @@
                 <ul>
                     <li class="index"><a href="index">Inicio</a></li>
                     <li class="travels"><a href="travels">Tipos de Viaje</a></li>
-                    <li class="verDatos"><a href="mostrarForma">Ver Datos</a></li>
+                    <li class="servicios"><a href="servicios">Servicios</a></li>
                     <li class="forma"><a href="forma">Formulario</a></li>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
 
         <!--Formulario-->
         <div class="form-register">
-            <form id="form" class="formulario" action="forma" method="POST">
+            <form id="form" class="formulario" action="forma" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}  
                 <div class="form-answers">
                     <div class="form_description">
@@ -112,7 +112,12 @@
                                 </select>
                             </div>
                         </li>
+                        <li class="li_10">
+                            <label class="imagen" for="element_10">Imagen</label>
+                            <input type="file" name="txtImagen" id="txtImagen">
+                        </li>
                         
+
                         <li class="button">
                             <input id="saveForm" class="button_text" type="submit" value="Submit"/>
                         </li>

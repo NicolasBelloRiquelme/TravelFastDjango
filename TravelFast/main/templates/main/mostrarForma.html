@@ -18,7 +18,7 @@
                 <ul>
                     <li class="index"><a href="index">Inicio</a></li>
                     <li class="travels"><a href="travels">Tipos de Viaje</a></li>
-                    <li class="verDatos"><a href="mostrarForma">Ver Datos</a></li>
+                    <li class="servicios"><a href="servicios">Servicios</a></li>
                     <li class="forma"><a href="forma">Formulario</a></li>
                 </ul>
             </nav>
@@ -37,6 +37,7 @@
                         <th>Region</th>
                         <th>Comuna</th>
                         <th>Tipo de Viaje</th>
+                        <th>Imagen</th>
                     </tr>
                     <tbody>
                         {% for item in all %}
@@ -49,6 +50,7 @@
                                 <td>{{item.Region}}</td>
                                 <td>{{item.Comuna}}</td>
                                 <td>{{item.TipoViaje}}</td>
+                                <td>{{item.Imagen}}</td>
                             </tr>
                         {% endfor%}
                     </tbody>

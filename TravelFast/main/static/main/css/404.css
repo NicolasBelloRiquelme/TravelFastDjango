@@ -1,0 +1,107 @@
+/* Menu & Container */
+.container {
+    position: relative;
+    background: #fff;
+    width: 95%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+    display: table;
+}
+
+.menu ul li {
+    display: table-cell;
+    width: calc(30px * 5)
+}
+
+.menu ul li:hover{
+    background: black;
+}
+
+.menu ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu ul .todos {background: #3691be;}
+.menu ul .turismo {background: #106288;}
+.menu ul .trabajo {background: #0b4661;}
+.menu ul .estadia {background: #093144;}
+.menu ul .vacaciones {background: #022535;}
+
+/* Imagen Not Found */
+.notfound {
+    width: 100%;
+    position: relative;
+    align-content: center;
+    text-align: center;
+}
+
+.notfound .text {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Responsive Code */
+@media screen and (max-width: 1860px){
+    .navbar nav {
+        padding: 10px 40px 10px 0;
+    }   
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        padding: 0 0 10px;
+        
+    }
+
+    .navbar nav ul li {
+        padding: 10px 20px 10px;
+        text-align: justify;
+        display: table-row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1188px) {
+
+    nav {
+        padding: 10px 40px 10px 0;
+    }   
+
+    nav ul {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px;
+        padding: 0 0 10px;
+    }
+
+    nav ul li {
+        max-width: 100%;
+        padding: 10px 20px 10px;
+        text-align: justify;
+        display: table-row;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
