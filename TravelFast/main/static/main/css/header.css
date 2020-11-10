@@ -80,9 +80,8 @@ li {
 
 li.index {background: #3691be;}
 li.travels {background: #106288;}
-li.servicios {background: #0b4661;}
-li.inicioSesion {background: #093144;}
-li.crearUsuario {background: white;}
+li.verDatos {background: #0b4661;}
+li.forma {background: #093144;}
 
 /* Bienvenido Mensaje */
 .bienvenido-msg {
@@ -91,7 +90,12 @@ li.crearUsuario {background: white;}
     margin: 20px;
 }
 
-.bienvenido-msg a{
+p a{
     text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    color: #3691be;
+}
+
+p a:hover {
     color: #ff4d4d;
 }
