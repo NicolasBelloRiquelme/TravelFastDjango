@@ -65,7 +65,6 @@ def crearUsuario(request):
                 password = form.cleaned_data['password1']
 
                 user = authenticate(email=email, password=password)
-                login(request, user)
 
                 messages.success(request,"Usuario Creado Exitosamente!")
 

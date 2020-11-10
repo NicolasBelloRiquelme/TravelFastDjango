@@ -25,5 +25,5 @@ class registroForma(forms.ModelForm):
     
     class Meta:
         model = formularioRegistro
-        fields = ("Email", "Rut", "Nombres", "Apellidos", "Telefono", "Region", "Comuna", "TipoViaje", "Imagen")
+        fields = ["Email", "Rut", "Nombres", "Apellidos", "Telefono", "Region", "Comuna", "TipoViaje", "Imagen"]
 

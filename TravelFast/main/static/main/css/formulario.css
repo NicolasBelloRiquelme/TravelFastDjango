@@ -25,7 +25,7 @@
     width: 350px;
 }
 
-.email, .rut, .nombres, .apellidos, .fecha, .telefono, .region, .comuna, .tipo, .imagen {
+.email, .rut, .nombres, .apellidos, .fecha, .telefono, .region, .comuna, .tipo, .Imagen {
     font-size: 19px;
     font-weight: 300;
     margin: 0 10px 0 0;
@@ -71,7 +71,7 @@
 
 /* Inputs y Labels */
 label.email, label.rut, label.nombres, label.apellidos, label.fecha, 
-label.telefono, label.region, label.comuna, label.tipo, label.imagen {
+label.telefono, label.region, label.comuna, label.tipo, label.Imagen {
     border: none;
     color: #222;
     display: block;
