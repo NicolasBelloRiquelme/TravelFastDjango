@@ -69,15 +69,6 @@
     padding-top: 3px;
 }
 
-.form-answers li .datepicker {
-    cursor: pointer !important;
-    float: left;
-    height: 16px;
-    margin: .1em 5px 0 0;
-    padding: 0;
-    width: 16px;
-}
-
 /* Inputs y Labels */
 label.email, label.rut, label.nombres, label.apellidos, label.fecha, 
 label.telefono, label.region, label.comuna, label.tipo, label.imagen {

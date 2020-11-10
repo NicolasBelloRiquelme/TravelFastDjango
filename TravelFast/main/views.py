@@ -100,6 +100,7 @@ def salirSesion(request):
     logout(request)
     return redirect('inicioSesion')
 
+@login_required(login_url='inicioSesion')
 def mostrarForma(request):
     all_data = formularioRegistro.objects.all
     return render(request, 'main/mostrarForma.html', {'all':all_data})

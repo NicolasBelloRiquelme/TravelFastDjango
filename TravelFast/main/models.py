@@ -22,7 +22,7 @@ class formularioRegistro(models.Model):
     Region = models.CharField(max_length=255, default=0)
     Comuna = models.CharField(max_length=255, default=0)
     TipoViaje = models.CharField(max_length=255, default=0)
-    Imagen = models.ImageField(upload_to="Viajes", null=True)
+    Imagen = models.ImageField(upload_to="Media/", null=True, blank=True)
 
     def __str__(self):
         return self.Email + ' ' + self.Rut 

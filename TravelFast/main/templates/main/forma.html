@@ -23,7 +23,7 @@
                 <ul>
                     <li class="index"><a href="index">Inicio</a></li>
                     <li class="travels"><a href="travels">Tipos de Viaje</a></li>
-                    <li class="servicios"><a href="servicios">Servicios</a></li>
+                    <li class="servicios"><a href="mostrarForma">Servicios</a></li>
                     <li class="forma"><a href="forma">Formulario</a></li>
                 </ul>
             </nav>
@@ -113,12 +113,10 @@
                             </div>
                         </li>
                         <li class="li_10">
-                            <label class="imagen" for="element_10">Imagen</label>
+                            <label class="Imagen" for="element_10">Imagen</label>
                             <input type="file" name="txtImagen" id="txtImagen">
-                            
                         </li>
-                        
-                        
+                        {{ form.errors }}
                         <li class="button">
                             <input id="saveForm" class="button_text" type="submit" value="Submit"/>
                         </li>

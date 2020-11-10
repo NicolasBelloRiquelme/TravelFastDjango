@@ -1,53 +1,83 @@
-/* Menu & Container */
-.container {
-    position: relative;
-    background: #fff;
-    width: 95%;
-    max-width: 100%;
-    margin: 20px auto;
-}
 
-.menu ul {
-    list-style: none;
-    width: 100%;
-    display: table;
-}
-
-.menu ul li {
-    display: table-cell;
-    width: calc(30px * 5)
-}
-
-.menu ul li:hover{
-    background: black;
-}
-
-.menu ul li a {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.menu ul .todos {background: #3691be;}
-.menu ul .turismo {background: #106288;}
-.menu ul .trabajo {background: #0b4661;}
-.menu ul .estadia {background: #093144;}
-.menu ul .vacaciones {background: #022535;}
-
-/* Imagen Not Found */
-.notfound {
-    width: 100%;
-    position: relative;
+/* Formulario */
+.form-register {
+    display: flex;
+    background-color: grey;
     align-content: center;
-    text-align: center;
 }
 
-.notfound .text {
-    font-size: 20px;
-    font-weight: 900;
+.formulario {
+    margin: 10px auto;
+}
+
+.form-answers {
+    border: 2px solid white;
+    max-width: 100%;
+    background: #008080;
+    padding: 10px 50px;
+    border-radius: 8px;
+}
+
+.form-answers ul {
+    list-style-type: none;
+    font-size: 100%;
+    margin: 0 ;
+    padding: 0 50px 0 0;
+    width: 350px;
+}
+
+.imagen {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0 10px 0 0;
+}
+
+.form-answers li {
+    display: block;
+    width: 350px;
+    margin: 0;
+    padding: 4px 5px 2px 9px;
+    position: center;
+}
+
+.form-answers .button {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-answers li div {
+    color: #444;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+.form-answers li div label {
+    clear: both;
+    color: #444;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.form-answers li span label {
+    clear: both;
+    color: #444;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+}
+/* Inputs y Labels */
+label.imagen {
+    border: none;
+    color: #222;
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 10px;
 }
 
 /* Responsive Code */
