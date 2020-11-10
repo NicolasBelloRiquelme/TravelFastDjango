@@ -115,9 +115,10 @@
                         <li class="li_10">
                             <label class="imagen" for="element_10">Imagen</label>
                             <input type="file" name="txtImagen" id="txtImagen">
+                            
                         </li>
                         
-
+                        
                         <li class="button">
                             <input id="saveForm" class="button_text" type="submit" value="Submit"/>
                         </li>
@@ -126,6 +127,19 @@
             </form>
         </div>
 
+        <script>
+            var form_fields = document.getElementsByTagName('input')
+            form_fields[1].placeholder='Ingrese Email';
+            form_fields[2].placeholder='Ingrese Rut';
+            form_fields[3].placeholder='Ingrese Nombres';
+            form_fields[4].placeholder='Ingrese Apellidos';
+            form_fields[5].placeholder='Ingrese Telefono';
+
+            for(var field in form_fields){
+                form_fields[field].className += ' form-control'
+            }
+
+        </script>
         <!--Pie de Pagina-->
         <footer>
             <div class="footer-content">

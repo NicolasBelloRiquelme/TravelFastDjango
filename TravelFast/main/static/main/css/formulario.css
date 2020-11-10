@@ -90,6 +90,16 @@ label.telefono, label.region, label.comuna, label.tipo, label.imagen {
     padding: 0 0 10px;
 }
 
+input[type="file"]{
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+}
+
 input[type="email"],
 input[type="text"],
 input[type="tel"],
